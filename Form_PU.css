@@ -1,0 +1,76 @@
+body {
+    margin: 0rem auto;
+    overflow-x: hidden;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: var(--g);
+    background-image: 
+    /*linear-gradient(100deg,rgba(20,20,20,1)),
+    -moz-linear-gradient(rgba(20,20,20,1)),*/
+    url(https://www.dropbox.com/s/v96dps3cad4c2ka/Untitled%20design_1.png?dl=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}body {
+    margin: 0rem auto;
+    overflow-x: hidden;
+    padding: 25px 65px;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: var(--g);
+    background-image: 
+    /*linear-gradient(100deg,rgba(20,20,20,1)),
+    -moz-linear-gradient(rgba(20,20,20,1)),*/
+    url(https://www.dropbox.com/s/v96dps3cad4c2ka/Untitled%20design_1.png?dl=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-form {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(23,23,23,1);
+    width: auto;
+    height: auto;
+}
+.head-form {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #888;
+}
+.origin-form {
+    width: auto;
+    height: 60vh;
+    margin: 0;
+    padding: 15px;
+    background-color: #ccc;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group {
+    font-family: 'Raleway', sans-serif;
+}

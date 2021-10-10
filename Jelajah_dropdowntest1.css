@@ -1,0 +1,22 @@
+.nav ul li a {
+    text-decoration: none;
+    color: var(--veg2);
+    font-size: small;
+    cursor: pointer;
+    float: left;
+    display: block;
+    text-align: center;
+    width: 80px;
+}
+
+.nav ul li:hover .drop-child{display: block;}
+.nav ul .drop-child {
+    display: none;
+    top: 50px;
+    left: 5%;
+    position: absolute;
+    background-color: grey;
+}
+.nav ul li a:hover{
+    color: #fff;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="Landing_page_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.3/css/all.min.css">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+        <script src="Jelajah_dropdownfunction.js"></script>
+        <title>SARITA Landing Page</title>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <h2 class="logo">SARITA</h2>
+            <div class="nav">
+                <ul>
+                    <li class="dropdown" title="Pilih Domisili Anda">
+                        <a href="javascript:void(0)" class="a drop" onclick="myOpen()">
+                        Jelajahi <span><i class="fas fa-chevron-down fa-sm"></i></span></a>
+                        <div class="drop-content" id="content">
+                            <span><a href="#" class="b">Medan</a></span>
+                            <span><a href="#" class="b">Jakarta</a></span>
+                            <span><a href="#" class="b">Surabaya</a></span>
+                            <span><a href="#" class="b">Balikpapan</a></span>
+                            <span><a href="#" class="b">Makassar</a></span>
+                        </div>
+                    </li>
+                    <li title="Cari Fitur"><a href="#" class="a">Cari <span><i class="fas fa-chevron-down fa-sm"></i></span></a></li>
+                    <li title="Pusat Bantuan"><a href="#" class="a">Bantuan</a></li>
+                    <li title="Masuk Akun"><a href="#" class="a">Masuk</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="tbox">
+                <h1 class="bigcaption">Dapatkan kemudahan transaksi sayur dan buah petani lokal</h1>
+                <p class="caption">Kami membantu mempertemukan antara pembeli dan penjual di lokasi sekitar <br>
+                     secara cepat, dan efisien demi terciptanya masyarakat <br/>
+                     Indonesia yang sejahtera dan modern</p>
+                <p class="nb caption">Daftarkan diri anda segera, bonus menarik untuk id member dengan akhiran angka 1 & 2</p>
+                <button class="on" title="Daftar Akun" onclick="window.location.href='Pendaftaran_User.php'">DAFTAR</button>
+<!--searchbox--><div class="divbox">
+                    <!-- <span class="titlediv">Temukan kebutuhan anda</span><br> -->
+                    <form id="searchbox" action="#" method="get">
+                        <input type="search" size="16" name="cari" id="insearch" placeholder="Cari kebutuhan anda..." autocomplete="off" /><span title="Clear">&times;</span>
+                        <button class="cicle" draggable="true" title="Cari">
+                            <i class="fas fa-search fa-lg"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="https://www.dropbox.com/s/e3kn4iq57owjiy6/1616070514913.png?dl=1" alt="Sayuran Segar">
+            </div>
+            
+            <ul class="footinfo">
+                <li id="wa-sgn" class="litfootcontact">
+                    <a href="#" class="contact">Hubungi kami di </a>
+                    <a href="#" class="cname">
+                        <div class="clogo"></div>
+                        +62823220727
+                    </a>
+                </li>
+                <li id="fb" class="litfootcontact">
+                    <a href="#" class="contact">Ikuti komunitas kami di</a>
+                    <a href="#" class="cname">
+                        <div class="clogo"></div>
+                        saritasehat
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="blockf">
+            <div class="line" id="line1">
+                <div class="childrow1 childcol1"><a href="#">Tentang Kami</a></div>
+                <div class="childrow2 childcol1"></div>
+                <div class="childrow3 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="far fa-star"></i>&nbsp;&nbsp;Visi & Misi</a></div>
+                <div class="childrow4 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-github"></i>&nbsp;&nbsp;Ikuti Pengembang</a></div>
+                <div class="childrow5 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;Ikuti kami di Linkedin</a></div>
+                <div class="childrow6 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-instagram"></i>&nbsp;&nbsp;Ikuti kami di Instagram</a></div>
+                <div class="childrow7 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook"></i>&nbsp;&nbsp;Ikuti kami di Facebook</a></div>
+                <div class="childrow8 childcol1">&nbsp;&nbsp;&nbsp;&nbsp;<p class="copy">&copy;2021 Copyright: Muhamad Luthfi (Sarita Project)</p></div>
+            </div>
+            <div class="line" id="line2">
+                <div class="childrow1 childcol2"><a href="#">Layanan Fitur</a></div>
+                <div class="childrow2 childcol2"></div>
+                <div class="childrow3 childcol2 c"><a href="#">Penjualan</a></div>
+                <div class="childrow4 childcol2 c"><a href="#">Pesan Antar</a></div>
+                <div class="childrow5 childcol2 c"><a href="#">Rekomendasi</a></div>
+                <div class="childrow6 childcol2 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow7 childcol2 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow8 childcol2"></div>
+            </div>
+            <div class="line" id="line3">
+                <div class="childrow1 childcol3"><a href="#">Produk</a></div>
+                <div class="childrow2 childcol3"></div>
+                <div class="childrow3 childcol3 c"><a href="#">Saring Pencarian</a></div>
+                <div class="childrow4 childcol3 c"><a href="#">Bahan Makanan</a></div>
+                <div class="childrow5 childcol3 c"><a href="#">Bumbu Dapur</a></div>
+                <div class="childrow6 childcol3 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow7 childcol3 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow8 childcol3"></div>
+            </div>
+            <div class="line" id="line4">
+                <div class="childrow1 childcol4"><a href="#">Pusat Bantuan</a></div>
+                <div class="childrow2 childcol4"></div>
+                <div class="childrow3 childcol4 c"><a href="#">Tanya Jawab</a></div>
+                <div class="childrow4 childcol4 c"><a href="#">Administrasi</a></div>
+                <div class="childrow5 childcol4 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow6 childcol4 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow7 childcol4 c"><a href="#">Coming Soon...</a></div>
+                <div class="childrow8 childcol4"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            
+            (function() {
+                var searchForm = document.getElementById('searchbox'),
+                textInput = searchForm.cari,
+                clearBtn = textInput.nextSibling;
+                textInput.onkeyup = function() {
+                // Show the clear button if text input value is not empty
+                    clearBtn.style.visibility = (this.value.length) ? "visible" : "hidden";
+                };
+            // Hide the clear button on click, and reset the input value
+                clearBtn.onclick = function() {
+                    this.style.visibility = "hidden";
+                    textInput.value = "";
+                };
+                moveToRegister.onclick = function(url) {
+                    window.location.replace(url);
+                };
+            });
+        </script>
+        
+    </body>
+</html>
